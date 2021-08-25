@@ -15,7 +15,7 @@ export const fetchCharacters = createAsyncThunk(
   'characters/fetchCharacters',
   async () => {
     const response = await axios.get(
-      'http://hp-api.herokuapp.com/api/characters'
+      'https://hp-api.herokuapp.com/api/characters'
     );
     return response.data;
   }
