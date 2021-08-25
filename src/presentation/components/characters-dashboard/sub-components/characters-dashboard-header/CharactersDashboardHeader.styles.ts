@@ -44,9 +44,10 @@ export const Container = styled.div`
   }
 
   @media (max-width: 500px) {
-    height: 160px;
+    height: 180px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     justify-items: center;
+    text-align: center;
   }
 `;
