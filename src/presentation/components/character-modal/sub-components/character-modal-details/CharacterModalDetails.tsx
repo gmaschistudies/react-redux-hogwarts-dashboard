@@ -3,6 +3,7 @@ import React, {
   ReactElement as RE,
   useState,
 } from 'react';
+import { useIntl } from 'react-intl';
 import { useAppDispatch } from '@/data/store/hooks';
 import { changeScore } from '@/presentation/store/features/score/ScoreSlice';
 import { StyledCharacterModalDetails } from './CharacterModalDetails.styles';
@@ -23,6 +24,8 @@ const CharacterModalDetails: FC<Props> = ({ name, house }: Props): RE => {
   const [scoreAttributed, setScoreAttributed] = useState<
     'gain' | 'lose' | null
   >(null);
+
+  const intl = useIntl();
 
   let badge;
 
@@ -76,7 +79,7 @@ const CharacterModalDetails: FC<Props> = ({ name, house }: Props): RE => {
           type="button"
           onClick={() => handleDoneClick()}
         >
-          Done
+          {intl.formatMessage({ id: 'character.modal.done.button' })}
         </button>
       </div>
     );
@@ -88,14 +91,14 @@ const CharacterModalDetails: FC<Props> = ({ name, house }: Props): RE => {
           className="character-modal-details-button gain-button"
           onClick={() => handleGainClick()}
         >
-          Gain
+          {intl.formatMessage({ id: 'character.modal.gain.button' })}
         </button>
         <button
           type="button"
           className="character-modal-details-button lose-button"
           onClick={() => handleLoseClick()}
         >
-          Lose
+          {intl.formatMessage({ id: 'character.modal.lose.button' })}
         </button>
       </>
     );

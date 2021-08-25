@@ -1,6 +1,13 @@
 {
-  "text": "texto",
+  "home.header.title": "HP World",
 
-  "routes.example": "/example",
+  "home.characters.dashboard.title": "Students Dashboard Intl",
+  "home.characters.dashboard.header.name.title": "Student",
+  "home.characters.dashboard.header.house.title": "House",
+
+  "character.modal.gain.button": "Gain",
+  "character.modal.lose.button": "Lose",
+  "character.modal.done.button": "Done",
+
   "routes.home": "/"
 }

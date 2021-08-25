@@ -1,0 +1,13 @@
+{
+  "home.header.title": "Mundo HP",
+
+  "home.characters.dashboard.title": "Painel de Estudantes",
+  "home.characters.dashboard.header.name.title": "Estudante",
+  "home.characters.dashboard.header.house.title": "Casa",
+
+  "character.modal.gain.button": "Ganho",
+  "character.modal.lose.button": "Perda",
+  "character.modal.done.button": "Feito",
+
+  "routes.home": "/"
+}

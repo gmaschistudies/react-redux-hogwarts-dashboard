@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const StyledHomeContainer = styled.div`
   min-height: 100vh;
   max-width: 100vw;
-  border: 2px solid white;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
