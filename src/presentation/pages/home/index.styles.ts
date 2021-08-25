@@ -22,6 +22,14 @@ export const StyledMainContentContainer = styled.div`
   border: 4px solid white;
   border-radius: 10px;
   margin: 20px;
+
+  @media (max-width: 1250px) {
+    max-width: 860px;
+  }
+
+  @media (max-width: 900px) {
+    max-width: 600px;
+  } ;
 `;
 
 export const StyledScoreCardContainer = styled.div`
@@ -32,13 +40,3 @@ export const StyledScoreCardContainer = styled.div`
   justify-content: space-evenly;
   flex-wrap: wrap;
 `;
-
-// export const StyledCharactersCardContainer = styled.div`
-//   min-height: 600px;
-//   width: 100%;
-//   box-sizing: border-box;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   padding: 10px;
-// `;

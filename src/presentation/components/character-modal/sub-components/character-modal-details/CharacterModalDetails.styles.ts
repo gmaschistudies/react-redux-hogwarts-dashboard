@@ -16,6 +16,12 @@ export const StyledCharacterModalDetails = styled.div`
     align-items: center;
     height: 80px;
 
+    .character-modal-details-image {
+      height: 70%;
+      max-width: 100%;
+      overflow: auto;
+    }
+
     .character-modal-details-house-name {
       font-size: 22px;
       margin-left: 10px;
@@ -68,6 +74,35 @@ export const StyledCharacterModalDetails = styled.div`
 
       &:hover {
         background-color: red;
+      }
+    }
+
+    .done-button {
+      margin-top: 15px;
+      background-color: black;
+      color: white;
+
+      &:hover {
+        background-color: darkgray;
+      }
+    }
+
+    .character-modal-details-results-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .character-modal-details-results-score {
+        font-size: 32px;
+        font-weight: bold;
+      }
+      .positive-result {
+        color: green;
+      }
+
+      .negative-result {
+        color: red;
       }
     }
   }

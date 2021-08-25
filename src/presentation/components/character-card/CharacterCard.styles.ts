@@ -13,7 +13,29 @@ export const StyledCharacterCard = styled.div`
   align-items: center;
   justify-items: self-start;
 
-  .character-card-img {
+  .character-card-button {
     justify-self: self-end;
+    cursor: pointer;
+  }
+
+  .character-card-image {
+    height: 35px;
+    width: auto;
+  }
+
+  @media (max-width: 500px) {
+    height: 140px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 2fr;
+    justify-items: center;
+
+    .character-card-button {
+      justify-self: center;
+    }
+
+    .character-card-name {
+      width: 100%;
+      text-align: center;
+    }
   }
 `;

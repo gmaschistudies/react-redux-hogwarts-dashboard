@@ -1,12 +1,16 @@
 import React, { FunctionComponent as FC, ReactElement as RE } from 'react';
 import { StyledHeaderContainer } from '@/presentation/components/header/index.styles';
+import HogwartsLogo from '@/presentation/assets/hogwarts.png';
 
 const Header: FC = (): RE => {
   return (
     <StyledHeaderContainer>
-      <h3>IMG</h3>
-      <h1>HP World</h1>
-      <h3>Img</h3>
+      <img
+        src={HogwartsLogo}
+        alt="Hogwarts Logo"
+        className="header-hogwarts-logo"
+      />
+      <h1 className="header-title">HP World</h1>
     </StyledHeaderContainer>
   );
 };

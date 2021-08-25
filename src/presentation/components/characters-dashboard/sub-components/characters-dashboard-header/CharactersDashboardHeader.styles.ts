@@ -16,6 +16,13 @@ export const StyledCharactersDashboardHeader = styled.div`
     font-size: 20px;
     font-weight: bold;
   }
+
+  @media (max-width: 500px) {
+    height: 100px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+  }
 `;
 
 export const Container = styled.div`
@@ -34,5 +41,12 @@ export const Container = styled.div`
     font-weight: bold;
     padding: 4px;
     margin: 4px;
+  }
+
+  @media (max-width: 500px) {
+    height: 160px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
   }
 `;

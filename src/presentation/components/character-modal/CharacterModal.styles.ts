@@ -14,8 +14,8 @@ export const StyledCharacterModal = styled.div`
   align-items: center;
 
   .character-modal-character-image {
-    width: 225px;
-    height: 100%;
+    max-width: 225px;
+    height: 90%;
     box-sizing: border-box;
     color: black;
   }
