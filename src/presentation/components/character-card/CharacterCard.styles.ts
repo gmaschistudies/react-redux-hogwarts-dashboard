@@ -5,11 +5,15 @@ export const StyledCharacterCard = styled.div`
   height: 60px;
   box-sizing: border-box;
   background-color: #333;
-  border: 2px solid white;
-  padding: 5px;
+  border-top: 2px solid white;
+  padding: 5px 15px;
   margin: 5px;
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   align-items: center;
-  justify-items: center;
+  justify-items: self-start;
+
+  .character-card-img {
+    justify-self: self-end;
+  }
 `;

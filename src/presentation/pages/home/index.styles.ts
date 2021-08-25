@@ -19,7 +19,7 @@ export const StyledMainContentContainer = styled.div`
   flex-direction: column;
   align-items: center;
   background-color: #333;
-  border: 3px solid white;
+  border: 4px solid white;
   border-radius: 10px;
   margin: 20px;
 `;

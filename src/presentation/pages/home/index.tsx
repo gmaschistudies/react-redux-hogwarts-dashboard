@@ -8,10 +8,12 @@ import Header from '@/presentation/components/header';
 import ScoreCard from '@/presentation/components/score-card/ScoreCard';
 import Footer from '@/presentation/components/footer/Footer';
 import CharactersDashboard from '@/presentation/components/characters-dashboard/CharactersDashboard';
+// import CharacterModal from '@/presentation/components/character-modal/CharacterModal';
 
 const Home: FC = (): RE => {
   return (
     <StyledHomeContainer>
+      {/* <CharacterModal /> */}
       <Header />
       <StyledMainContentContainer>
         <StyledScoreCardContainer>
