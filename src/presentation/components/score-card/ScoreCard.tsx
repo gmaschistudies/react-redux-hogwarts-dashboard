@@ -1,9 +1,6 @@
 import React, { FunctionComponent as FC, ReactElement as RE } from 'react';
 import { StyledScoreCard } from './ScoreCard.styles';
-import GryffindorBadge from '@/presentation/assets/gryffindor.png';
-import HufflepuffBadge from '@/presentation/assets/hufflepuff.png';
-import RavenclawBadge from '@/presentation/assets/ravenclaw.png';
-import SlytherinBadge from '@/presentation/assets/slytherin.png';
+import getHouseBadge from '@/presentation/utils/get-house-badge/getHouseBagde';
 
 interface Props {
   house: string;
@@ -12,24 +9,7 @@ interface Props {
 }
 
 const ScoreCard: FC<Props> = ({ house, score, position }): RE => {
-  let badge: string;
-
-  switch (house) {
-    case 'Gryffindor':
-      badge = GryffindorBadge;
-      break;
-    case 'Hufflepuff':
-      badge = HufflepuffBadge;
-      break;
-    case 'Ravenclaw':
-      badge = RavenclawBadge;
-      break;
-    case 'Slytherin':
-      badge = SlytherinBadge;
-      break;
-    default:
-      badge = '';
-  }
+  const badge: string = getHouseBadge(house);
 
   return (
     <StyledScoreCard>

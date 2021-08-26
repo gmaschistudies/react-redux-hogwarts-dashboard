@@ -21,6 +21,7 @@ const CharacterModal: FC = (): RE => {
           src={image}
           alt={name}
         />
+        {/* eslint-disable-next-line @typescript-eslint/no-non-null-assertion */}
         <CharacterModalDetails name={name} house={house!} />
       </StyledCharacterModal>
     </Container>

@@ -6,13 +6,12 @@ import { changeCurrentStudent } from '@/presentation/store/features/characters/C
 import scroll from '@/presentation/assets/scroll.png';
 
 interface Props {
-  student?: CurrentStudent;
+  student: CurrentStudent;
 }
 
 const CharacterCard: FC<Props> = ({ student }: Props): RE => {
   const dispacth = useAppDispatch();
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const { name, house, image } = student!;
+  const { name, house } = student;
 
   return (
     <StyledCharacterCard className="character-card">
@@ -21,7 +20,7 @@ const CharacterCard: FC<Props> = ({ student }: Props): RE => {
       <button
         type="button"
         className="character-card-button"
-        onClick={() => dispacth(changeCurrentStudent(student!))}
+        onClick={() => dispacth(changeCurrentStudent(student))}
       >
         <img src={scroll} alt="scroll" className="character-card-image" />
       </button>

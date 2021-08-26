@@ -28,6 +28,7 @@ const CharacterDashboard: FC = (): RE => {
       <CharactersDashboardHeader />
       {allStudents
         .sort((studentA, studentB) =>
+          // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
           studentA.house!.localeCompare(studentB.house!)
         )
         .map((student) => {

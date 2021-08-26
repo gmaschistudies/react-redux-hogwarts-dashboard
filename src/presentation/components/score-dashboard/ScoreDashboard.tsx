@@ -13,7 +13,12 @@ const ScoreDashboard: FC = (): RE => {
         .sort((houseA, houseB) => houseB[1] - houseA[1])
         .map((house, idx) => {
           return (
-            <ScoreCard house={house[0]} score={house[1]} position={idx + 1} />
+            <ScoreCard
+              key={house[0]}
+              house={house[0]}
+              score={house[1]}
+              position={idx + 1}
+            />
           );
         })}
     </StyledScoreDashboard>
