@@ -59,7 +59,7 @@ export const StyledScoreChanger = styled.div`
       align-items: center;
 
       .character-modal-details-results-score {
-        font-size: 32px;
+        font-size: 36px;
         font-weight: bold;
       }
       .positive-result {

@@ -1,6 +1,6 @@
 import React, { FunctionComponent as FC, ReactElement as RE } from 'react';
 import { StyledCharacterModalDetails } from './CharacterModalDetails.styles';
-import ScoreChanger from '@/presentation/components/character-modal/sub-components/character-modal-details/sub-components/score-changer/ScoreChanger';
+import ScoreChanger from './sub-components/score-changer/ScoreChanger';
 import getHouseBadge from '@/presentation/utils/get-house-badge/getHouseBagde';
 
 interface Props {
